@@ -36,15 +36,28 @@ def get_adc_reading():
     listout = [temp_F,thermistor_resistance_kohm]
     return listout
 
+def get_date_time():
+    timelist = time.localtime()
+    _date = str(timelist[0]) + "-" + str(timelist[1]) + "-" + str(timelist[2])
+    _time = str(timelist[3]) + ":" + str(timelist[4]) + ":" + str(timelist[5])
+    out = [_date,_time]
+    return out
+
 
 if __name__ == '__main__':
     while True:
         #TODO: check_voltage_convert_to_temp
         listout = get_adc_reading()
         temperature,thermistor_resistance_kohm = listout[0],listout[1]
+        #TODO: get time and date:
+        date_time_list = get_date_time()
+        _date,_time = date_time_list[0],date_time_list[1]
+        #TODO: print out data:
         print("")
+        print("Date:",_date)
+        print("Time:",_time)
         print("Temperature:",temperature,"F")
         print("Thermistor Kohm:",thermistor_resistance_kohm,"Ohm")
-        print("Formula: x = e^(-(therm_kOhm - 112.7)/23.64)")
+        print("Formula: Temp in Farenheit = e**(-(",str(thermistor_resistance_kohm),"- 112.7 ) / 23.64 )")
         print("")
         time.sleep(120)
