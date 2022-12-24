@@ -57,7 +57,7 @@ if __name__ == '__main__':
         print("Date:",_date)
         print("Time:",_time)
         print("Temperature:",temperature,"F")
-        print("Thermistor Kohm:",thermistor_resistance_kohm,"Ohm")
+        print("Thermistor Resistance:",thermistor_resistance_kohm,"kOhm")
         print("Formula: Temp in Farenheit = e**(-(",str(thermistor_resistance_kohm),"- 112.7 ) / 23.64 )")
         print("")
         time.sleep(120)
