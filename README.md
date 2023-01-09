@@ -8,7 +8,7 @@ Assumes use of 10kΩ nominal [NTC_MF52 thermistors](https://www.gotronic.fr/pj2-
 ``` python
 from machine import Pin
 import time
-from NTC_MF52 import NTC_MF52AT_3950k_10kOhm as thermistor_setup
+from NTC_MF52 import NTC_MF52AT_3950k as thermistor_setup
 ```
 
 ### user configuration:
