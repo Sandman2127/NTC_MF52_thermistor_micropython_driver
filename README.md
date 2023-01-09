@@ -1,8 +1,8 @@
-# NTC_MF52AT_3950k_10kOhm thermistor micropython driver
+# NTC_MF52AT_3950k thermistor micropython driver
 
 ### requires:
-[micropython version: >= v1.19.1](https://micropython.org/download/rp2-pico/)
-Assumes use of 10kΩ nominal [NTC_MF52 thermistors](https://www.gotronic.fr/pj2-mf52type-1554.pdf)
+1.[micropython version: >= v1.19.1](https://micropython.org/download/rp2-pico/)
+2.Assumes use of 10kΩ nominal [NTC_MF52 thermistors](https://www.gotronic.fr/pj2-mf52type-1554.pdf)
 
 ### other imports:
 ``` python
