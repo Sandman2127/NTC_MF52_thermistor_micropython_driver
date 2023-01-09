@@ -2,10 +2,10 @@ from machine import Pin
 import time
 from NTC_MF52 import NTC_MF52AT_3950k_10kOhm as thermistor_setup
 
-adc_pin = Pin(27)  #31 & 32 & 34 (GPs 26,27,28) are the only pins for ADC ones
-adcDepth = 65536
-supply_voltage = 3.263
-known_divider_resistance = 9880
+adc_pin = Pin(27)  # <int> 31 & 32 & 34 (GPs 26,27,28) are the only pins for ADC
+adc_depth = 65536   # <int> 2^bit_depth of ADC
+supply_voltage = 3.263  # <float> supply voltage measured
+known_divider_resistance = 9880  # <int> measured resistance in Ohms
 
 def get_date_time():
     timelist = time.localtime()
