@@ -20,8 +20,8 @@ thermistor_1 = thermistor_setup(adc_pin,supply_voltage,known_divider_resistance)
 if __name__ == '__main__':
     while True:
         #TODO: check_voltage_convert_to_temp
-        listout = thermistor_1.get_temp()
-        temperature,thermistor_resistance_kohm = listout[0],listout[1]
+        tuple_out = thermistor_1.get_temp_in_F()
+        temperature,thermistor_resistance_kohm = tuple_out[0],tuple_out[1]
         #TODO: get time and date:
         date_time_list = get_date_time()
         _date,_time = date_time_list[0],date_time_list[1]

@@ -34,7 +34,7 @@ class NTC_MF52AT_3950k_10kOhm:
     def map_val(value, istart, istop, ostart, ostop):
         return ostart + (ostop - ostart) * ((value - istart) / (istop - istart))
 
-    def get_temp(self):
+    def get_temp_in_F(self):
         adc_raw_reading = self.adc.read_u16()
         #TODO: measure the voltage across a 10kOhm resistor
         divider_voltage = round(adc_raw_reading,0,self.adc_depth,0.000,self.supply_voltage),6)
