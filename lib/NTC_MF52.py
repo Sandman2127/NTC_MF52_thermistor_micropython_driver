@@ -23,7 +23,7 @@
 from machine import ADC
 import math
 
-class NTC_MF52AT_3950k_10kOhm:
+class NTC_MF52AT_3950k:
     def __init__(self,input_pin,supply_voltage,known_resistor) -> None:
         self.adc = ADC(input_pin)
         self.supply_voltage = supply_voltage

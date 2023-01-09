@@ -1,7 +1,8 @@
 # NTC_MF52AT_3950k_10kOhm thermistor micropython driver
 
 ### requires:
-[micropython version: >= v1.19.1](https://micropython.org/download/rp2-pico/) 
+[micropython version: >= v1.19.1](https://micropython.org/download/rp2-pico/)
+Assumes use of 10kΩ nominal [NTC_MF52 thermistors](https://www.gotronic.fr/pj2-mf52type-1554.pdf)
 
 ### other imports:
 ``` python
@@ -26,6 +27,6 @@ supply_voltage = 3.263  # <float> supply voltage measured
 known_divider_resistance = 9880  # <int> measured resistance in Ohms
 ```
 
-### voltage divider circuit to measure 
+### voltage divider circuit to measure
 
 ![voltage_divider_circuit](/imgs/NTC_MF52_Thermistor.png "NTC_MF52 Thermistor Voltage Divider Circuit")
