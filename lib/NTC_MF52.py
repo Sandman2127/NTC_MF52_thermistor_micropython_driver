@@ -37,7 +37,7 @@ class NTC_MF52AT_3950k_10kOhm:
     def get_temp_in_F(self):
         adc_raw_reading = self.adc.read_u16()
         #TODO: measure the voltage across a 10kOhm resistor
-        divider_voltage = round(adc_raw_reading,0,self.adc_depth,0.000,self.supply_voltage),6)
+        divider_voltage = round((adc_raw_reading,0,self.adc_depth,0.000,self.supply_voltage),6)
         #TODO: determine total current flowing through the voltage divider
         # V=IR
         I = divider_voltage/self.divider_known_resistance
