@@ -1,4 +1,4 @@
-# NTC_MF52AT_3950k_10kOhm voltage divider thermistor
+# NTC_MF52AT_3950k_10kOhm thermistor micropython driver
 
 ### requires:
 [micropython version: >= v1.19.1](https://micropython.org/download/rp2-pico/) 
